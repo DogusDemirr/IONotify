@@ -1,85 +1,106 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F0F4F8', // Açık gri tonları
-    padding: 16,
+    backgroundColor: '#F9FAFB',
   },
   loginBox: {
-    backgroundColor: 'white',
-    borderRadius: 10,
-    padding: 20,
-    width: '90%',
-    maxWidth: 400,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    shadowRadius: 10,
-    elevation: 5,
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 24,
+    width: '100%',
+    maxWidth: '100%',
+    backgroundColor: 'transparent',
+    borderRadius: 0,
+    shadowColor: 'transparent',
+    elevation: 0,
+  },
+  logoContainer: {
     alignItems: 'center',
+    marginBottom: 32,
   },
   logo: {
-    width: 100,
-    height: 100,
-    marginBottom: 20,
+    width: 128,
+    height: 128,
+    marginBottom: 16,
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#333',
+    color: '#1F2937',
+    marginBottom: 8,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#6B7280',
+  },
+  inputContainer: {
+    marginBottom: 16,
+  },
+  inputLabel: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: 8,
   },
   input: {
-    width: '100%',
-    height: 50,
-    borderColor: '#ccc',
+    backgroundColor: '#F3F4F6',
     borderWidth: 1,
-    borderRadius: 8,
-    marginBottom: 15,
-    paddingHorizontal: 10,
+    borderColor: '#E5E7EB',
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
     fontSize: 16,
-    backgroundColor: '#fafafa',
+    color: '#1F2937',
   },
   error: {
-    color: 'red',
+    color: '#EF4444',
     fontSize: 14,
-    marginBottom: 10,
-  },
-  loginButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#4CAF50', // Yeşil tonları
-    borderRadius: 8,
-    width: '100%',
-    height: 50,
-    justifyContent: 'center',
-    marginBottom: 15,
-  },
-  clearButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#F44336', // Kırmızı tonları
-    borderRadius: 8,
-    width: '100%',
-    height: 50,
-    justifyContent: 'center',
-  },
-  icon: {
-    marginRight: 10,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
+    marginTop: 8,
   },
   rememberMeContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 15, // Bu alanda biraz boşluk bırakabiliriz
+    justifyContent: 'space-between',
+    marginTop: 16,
+    marginBottom: 24,
+  },
+  rememberMeText: {
+    color: '#4B5563',
+    marginLeft: 8,
+  },
+  forgotPassword: {
+    color: '#4F46E5',
+    fontWeight: '600',
+  },
+  loginButton: {
+    backgroundColor: '#4F46E5',
+    borderRadius: 12,
+    paddingVertical: 16,
+    marginTop: 8,
+  },
+  clearButton: {
+    backgroundColor: '#F3F4F6',
+    borderRadius: 12,
+    paddingVertical: 16,
+    marginTop: 8,
+  },
+  buttonContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: '600',
+    marginLeft: 8,
+  },
+  clearButtonText: {
+    color: '#4B5563',
+    fontSize: 18,
+    fontWeight: '600',
+    marginLeft: 8,
   },
 });
-
-export default styles;
