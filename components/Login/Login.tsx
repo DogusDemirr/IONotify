@@ -3,7 +3,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
-import { Image, KeyboardAvoidingView, Platform, Switch, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Image, KeyboardAvoidingView, Switch, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 const Login = () => {
   const navigation = useNavigation();
@@ -28,7 +28,7 @@ const Login = () => {
       return;
     }
 
-    if (email === 'test@example.com' && password === 'password') {
+    if (email === '1' && password === '1') {
       if (rememberMe) {
         await AsyncStorage.setItem('user', JSON.stringify({ email }));
       }
@@ -47,7 +47,6 @@ const Login = () => {
   return (
     <KeyboardAvoidingView
       style={styles.container}
-      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <View style={styles.loginBox}>
         <Image
